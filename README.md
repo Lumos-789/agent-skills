@@ -46,7 +46,7 @@ Some skills are adapted from [Matt Pocock's claude-code-skills](https://github.c
 | **转手** | Matt's `handoff` | FILO queue (timestamped files, newest-first) instead of single-file |
 | **looklook** | Matt's `look-look` | Adapted file paths and tone |
 
-**接手** is original — the pickup side of the handoff queue, designed to complement 转手.
+**接手** complements 转手 as the pickup side of the handoff queue.
 
 ## Origin
 
