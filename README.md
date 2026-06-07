@@ -31,7 +31,7 @@ Look for `<!-- adapt -->` comments in each skill file to adapt to your own struc
 ## Skill Design Patterns
 
 - **Markdown-as-skill** — Each skill is a `SKILL.md` with YAML frontmatter + instructions. Claude reads and follows.
-- **FIFO handoff queue** — Timestamped markdown files in a directory. Oldest = next task. No database, no server.
+- **FILO handoff queue** — Timestamped markdown files in a directory. Newest = next task. No database, no server.
 - **One-question-at-a-time** — The 审问 skill enforces strict one-question-per-reply discipline.
 - **Layered wrap-up** — Three levels: `/完事` (one line) → `/收工 {project}` (git + card) → `/下班` (full audit).
 - **OODA self-improvement** — Observe-Orient-Decide-Act as recurring agent behavior.
