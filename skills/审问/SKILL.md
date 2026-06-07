@@ -74,3 +74,7 @@ Only offer to create an ADR when all three are true:
 3. **The result of a real trade-off** — there were multiple options, you chose one for a reason
 
 If any of the three is missing, skip the ADR. Use the format in [ADR-FORMAT.md](./ADR-FORMAT.md).
+
+## Attribution
+
+Based on [Matt Pocock's `grill` skill](https://github.com/mattpocock/claude-code-skills). Core additions: glossary building, ADR archiving, and cross-referencing with existing code.

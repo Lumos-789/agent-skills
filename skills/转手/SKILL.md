@@ -37,3 +37,7 @@ Related file paths (PRDs, plans, ADRs, diffs, etc.) — reference, don't duplica
 - **Sanitize**: remove API keys, passwords, PII
 - **If the user provided a subject** (e.g. `/转手 refactor the recommendation engine`), organize the document around it
 - **Working directory must be accurate**: reference paths from your project registry
+
+## Attribution
+
+Handoff concept from [Matt Pocock's `handoff` skill](https://github.com/mattpocock/claude-code-skills). Our innovation: FILO queue (timestamped filenames, newest-first pickup) instead of Matt's single-file approach.
