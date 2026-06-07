@@ -15,12 +15,13 @@ Reusable Claude Code skills for personal agent workflows.
 | **完事** (Done) | `/完事` | Append one line to today's scratch file. | Needs `reports/` |
 | **收工** (Wrap-up) | `/收工 {project}` | Scan git + update project card + append to scratch. | Needs project structure |
 | **下班** (EOD) | `/下班` | Full EOD: all cards, report, commit. | Needs full environment |
+| **looklook** (Look Look) | `/lklk` | Check todos → parked ideas → wander the web. Never "nothing to do". | Yes |
 | **整理现状** (Status) | `/整理现状` | Read-only snapshot of all project cards + git activity. | Needs project structure |
 
 ### Standalone vs Environment-dependent
 
 **Standalone** — work with just a project directory and `CLAUDE.md`:
-审问, 转手, 接手, 记忆盘点
+审问, 转手, 接手, 记忆盘点, looklook
 
 **Environment-dependent** — expect a management hub with project cards, reports, scratch files:
 完事, 收工, 下班, 整理现状
@@ -43,6 +44,7 @@ Some skills are adapted from [Matt Pocock's claude-code-skills](https://github.c
 |-------|--------|-------------|
 | **审问** | Matt's `grill` | Added glossary building, ADR archiving, cross-referencing with code |
 | **转手** | Matt's `handoff` | FILO queue (timestamped files, newest-first) instead of single-file |
+| **looklook** | Matt's `look-look` | Adapted file paths and tone |
 
 **接手** is original — the pickup side of the handoff queue, designed to complement 转手.
 
