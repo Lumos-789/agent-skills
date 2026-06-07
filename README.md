@@ -16,8 +16,6 @@ Reusable Claude Code skills for personal agent workflows.
 | **收工** (Wrap-up) | `/收工 {project}` | Scan git + update project card + append to scratch. | Needs project structure |
 | **下班** (EOD) | `/下班` | Full EOD: all cards, report, commit. | Needs full environment |
 | **整理现状** (Status) | `/整理现状` | Read-only snapshot of all project cards + git activity. | Needs project structure |
-| **复盘** (Retrospective) | `/复盘 {project}` | Structured retrospective with 5-Why root cause analysis. | Needs project structure |
-| **自驱** (Self-drive) | `/自驱` | OODA loop for continuous self-improvement. | Needs self-drive module |
 
 ### Standalone vs Environment-dependent
 
@@ -25,7 +23,7 @@ Reusable Claude Code skills for personal agent workflows.
 审问, 转手, 接手, 记忆盘点
 
 **Environment-dependent** — expect a management hub with project cards, reports, scratch files:
-完事, 收工, 下班, 整理现状, 复盘, 自驱
+完事, 收工, 下班, 整理现状
 
 Look for `<!-- adapt -->` comments in each skill file to adapt to your own structure.
 
@@ -36,6 +34,17 @@ Look for `<!-- adapt -->` comments in each skill file to adapt to your own struc
 - **One-question-at-a-time** — The 审问 skill enforces strict one-question-per-reply discipline.
 - **Layered wrap-up** — Three levels: `/完事` (one line) → `/收工 {project}` (git + card) → `/下班` (full audit).
 - **OODA self-improvement** — Observe-Orient-Decide-Act as recurring agent behavior.
+
+## Attribution
+
+Some skills are adapted from [Matt Pocock's claude-code-skills](https://github.com/mattpocock/claude-code-skills):
+
+| Skill | Source | Our changes |
+|-------|--------|-------------|
+| **审问** | Matt's `grill` | Added glossary building, ADR archiving, cross-referencing with code |
+| **转手** | Matt's `handoff` | FILO queue (timestamped files, newest-first) instead of single-file |
+
+**接手** is original — the pickup side of the handoff queue, designed to complement 转手.
 
 ## Origin
 
