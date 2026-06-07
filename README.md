@@ -8,7 +8,7 @@ Reusable Claude Code skills for personal agent workflows.
 
 | Skill | Trigger | Description | Standalone |
 |-------|---------|-------------|------------|
-| **审问** (Interrogate) | `/审问` | One-question-at-a-time design interrogation. Builds glossary + ADRs. | Yes |
+| **审问** (Grill) | `/审问` | One-question-at-a-time design interrogation. Builds glossary + ADRs. | Yes |
 | **转手** (Handoff) | `/转手` | Write a handoff document to a FIFO queue for the next session. | Yes |
 | **接手** (Take) | `/接手` | Pick up the oldest task from the handoff queue. | Yes |
 | **记忆盘点** (Memory Audit) | `/记忆盘点` | Scan session logs, suggest memory/knowledge promotion/demotion. | Yes |
